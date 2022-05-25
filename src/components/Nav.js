@@ -1,5 +1,4 @@
-import { className } from "postcss-selector-parser";
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function Nav ({ currentPage, handlePageChange }) {
     return (
