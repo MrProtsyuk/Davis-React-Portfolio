@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Nav ({ currentPage, handlePageChange }) {
     return (
+    <div className=".bg-dark">
         <ul className="list-unstyled d-flex justify-content-around h5 m-4 p-2">
             <li>
                 <a href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About'}>About</a>
@@ -16,5 +17,6 @@ export default function Nav ({ currentPage, handlePageChange }) {
                 <a href="#skills" onClick={() => handlePageChange('Skills')} className={currentPage === 'Skills'}>Skills</a>
             </li>
         </ul>
+    </div>
     );
 }

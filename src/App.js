@@ -27,8 +27,12 @@ export default function App () {
 
   return (
     <div>
+    <header>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
-      {renderPage()}
+    </header>
+          <main className=".bg-secondary.bg-gradient">
+              {renderPage()}
+          </main>
     </div>
   )
 }
