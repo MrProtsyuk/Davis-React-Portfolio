@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills () {
     return (
-        <section>
+        <section className="m-3 ps-3">
             <h1>My Skills:</h1>
             <div>
                 <h3>Front End:</h3>
