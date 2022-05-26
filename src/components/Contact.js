@@ -38,25 +38,26 @@ export default function Contact () {
 
       return (
           <section>
-              <h1>Contact Me Here!</h1>
+              <h1 className="d-flex justify-content-center">Contact Me Here!</h1>
               <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
+                <div className="form-group d-flex justify-content-around">
+                    <label htmlFor="name" className="m-4 p-3 h3">Name:</label>
+                    <input type="text" name="name" className="form-control form-control-lg m-4 pb-5 w-50 h-25" defaultValue={name} onBlur={handleChange}></input>
                 </div>
-                <div>
-                    <label htmlFor="email">Email Address:</label>
-                    <input type="text" name="email" defaultValue={email} onBlur={handleChange}></input>
+                <div className="form-group d-flex justify-content-around">
+                    <label htmlFor="email" className="m-4 p-3 h3">Email Address:</label>
+                    <input type="text" name="email" className="form-control form-control-lg m-4 pb-5 w-50 h-25" defaultValue={email} onBlur={handleChange}></input>
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                <div className="form-group d-flex justify-content-around">
+                    <label htmlFor="message" className="m-4 p-3 h3">Message:</label>
+                    <textarea name="message" rows="5" className="form-control form-control-lg m-4 pb-5 w-50 h-25" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
-                        <p>{errorMessage}</p>
+                        <p className="d-flex justify-content-center h2">{errorMessage}</p>
                     </div>
                 )}
+                  <button type="submit" className="btn btn-primary d-flex justify-content-center"></button>
               </form>
           </section>
       );
