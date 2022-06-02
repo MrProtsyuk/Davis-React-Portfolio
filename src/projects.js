@@ -36,5 +36,11 @@ export const projects = [
         desctiption: 'A daily schedule that allows the user to input data in what they would need to accomplish in their work day.',
         image: 'scheduler.png',
         link: 'https://mrprotsyuk.github.io/Daily-Word-Scheduler/',
+    },
+    {
+        title: 'due',
+        desctiption: 'A helpful expense organizer built with MERN stack',
+        image: 'due.png',
+        link: 'https://calm-badlands-12876.herokuapp.com/login',
     }
 ];
